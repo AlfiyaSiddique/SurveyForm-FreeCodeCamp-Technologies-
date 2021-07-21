@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="survey videos etc/favicon.ico">
+
+    <title>Survey form</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+
+    <!--CSS styles with bootstrap 4 and 5 version and custom css  -->
+    <link rel="stylesheet" href="../bootstrap-5.0.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="survey stylesheets/survey.css">
+
+
+</head>
+
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="survey videos etc\bg-video.mp4">
+    </video>
+
+    <div class="container " id="main-container">
+        <div class="text-center">
+            <h1 id="title"> Survey for Future Technologies</h1>
+        </div>
+
+        <div class="py-4 text-ce">
+            <p id="description">The aim of this survey is to find the technologies in which most of the world population
+                is interested. This survey will help the professionals to work on those technologies. </p>
+        </div>
+
+        <form id="survey-form" autocomplete="on" class="form-group">
+            <div class="py-3 px-2">
+                <label for="name" id="name-label">1.Your Name</label>
+                <input type="text" id="name" required placeholder="Enter your Name" class="form-control">
+            </div>
+
+
+            <div class="py-3">
+                <label for="email" id="email-label">2.Your Email</label>
+                <input type="email" id="email" required pattern="A-Za-z0-9@" placeholder="Enter your Email"
+                    class="form-control">
+            </div>
+
+
+            <div class="py-3">
+                <label for="number" id="number-label">3.Your Number</label>
+                <input type="number" id="number" min="1" max="10" required placeholder="Enter your mobile Number"
+                    class="form-control">
+            </div>
+
+            <div class="py-3 form-group">
+                <label for="dropdown">4. In which Technology you are interested</label>
+                <select id="dropdown" class="form-control">
+                    <option value="begin" selected>Click the button to choose</option>
+                    <option value="Biotechnology">Biotechnology</option>
+                    <option value="Artificial Intelligence ">Artificial Intelligence </option>
+                    <option value="Nanotechnology">Nanotechnology</option>
+                    <option value="Space Technology">Space Technology</option>
+                    <option value="Nuclear Technology">Nuclear Technology</option>
+                    <option value="Robotics">Robotics</option>
+                    <option value="Remote Sensing Technology">Remote Sensing Technology</option>
+                </select>
+            </div>
+
+
+            <div class="py-3 form-check">
+                5. Are you a professional in tech field : <br>
+                <input type="checkbox" class="form-check-input" id="first-check" value="yes">
+                <label for="first-check" class="form-check-label">Yes</label><br>
+                <input type="checkbox" class="form-check-input" id="second-check" value="no">
+                <label for="second-check" class="form-check-label">No</label><br>
+                <input type="checkbox" class="form-check-input" id="third-check" value="as hobby">
+                <label for="third-check" class="form-check-label">Can't Say</label>
+            </div>
+
+            <div class="py-3">
+                6.Would you consider technologies as human-friendly: <br>
+                <input type="radio" name="choose" id="radi-one" value="Definitely">
+                <label for="radi-one">Definitely</label><br>
+
+                <input type="radio" name="choose" id="radi-two" value="May Be">
+                <label for="radi-two">May Be</label><br>
+
+                <input type="radio" name="choose" id="radi-three" value="Not Sure">
+                <label for="radi-three">Not Sure</label><br>
+            </div>
+
+            <div class="py-3">
+                <label for="reason">7. What is the reason that you are interested in your selected Technology/ Give your
+                    Opinion.</label>
+                <textarea id="reason" cols="70" rows="10"
+                    class="form-control">Text your opinion on Technologies</textarea>
+            </div>
+            <div class="py-3 text-center">
+                <input type="submit" id="submit" class="btn btn-success my-3"><br>
+                <input type="reset" class="btn btn-success ">
+            </div>
+        </form>
+
+        <div class="text-center" id="footer">
+            <p> Note : This Survey Form is Not Genuine . This page is created as a part of Responsive Web Design
+                Certification Project </p>
+            <p id="cred">Created By Alfiya Siddique - 2021</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+    </script>
+
+</body>
+
+</html>

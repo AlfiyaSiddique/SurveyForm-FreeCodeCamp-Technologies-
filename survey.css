@@ -1,0 +1,38 @@
+/* body style */
+body{
+    color: white;
+}
+/* utility class */
+h1{
+    font-family: "Roboto Slab" , serif;
+}
+p{
+    font-family: "ubuntu" , sans-serif;
+    font-size: 1.1rem;
+}
+/* background video style */
+#bg-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+/* main- container */
+#main-container{
+    background-color: rgb(12, 12, 63);
+margin: 8rem auto 4rem;
+border-radius :1rem; ;
+max-width: 57rem;
+padding: 3rem;
+}
+#description{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+#cred{
+    font-family: "Yellowtail" , cursive;
+}
+
+
